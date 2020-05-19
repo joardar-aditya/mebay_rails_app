@@ -1,0 +1,27 @@
+
+    <p>
+       <b>Name : </b>
+       <p><%= @ad.name %></p>
+    </p>
+    <p>
+       <b>Description :</b>
+       <p><%= @ad.desc %></p>
+    </p>
+    <p>
+       <b>Price :</b>
+       <p><%= @ad.price %></p>
+    </p>
+    <p>
+       <b>Seller Id :</b>
+        <p><%= @ad.seller_id %></p>
+    </p>
+    <p>
+       <b>Email :</b>
+        <p><%= @ad.email %></p>
+    </p>
+
+    <a href="/ads/<%= @ad.id%>/edit">Edit</a>
+
+    <a href="/ads/<%= @ad.id %>/delete">Delete</a>
+
+    <img src="<%= @ad.img_url %>"/>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Ads : <%= controller.action_name %></title>
+   </head>
+   <body>
+      <div id="header">
+            <div>
+                <h1>MeBay</h1>
+                <ul id="nav">
+                    <li><a href="/ads/">All ads</a></li>
+                    <li><a href="/ads/new">Publish new Ad</a></li>
+                </ul>
+            </div>
+      </div>
+      <div id="content">
+         <%= yield %>
+      </div>
+      <div id="clearfoot"></div>
+
+
+   </body>
+</html>   
